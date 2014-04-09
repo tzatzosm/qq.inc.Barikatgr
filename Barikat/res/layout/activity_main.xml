@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/act_main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/activity_main_categories_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <android.support.v4.view.ViewPager
+	    android:id="@+id/activity_main_category_list_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+	</android.support.v4.view.ViewPager>
+</FrameLayout>

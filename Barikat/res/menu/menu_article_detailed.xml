@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+      
+    <item android:id="@+id/action_font_minus"
+          android:icon="@drawable/icon_font_minus"
+          android:title="@string/action_font_minus"
+          yourapp:showAsAction="ifRoom"  />
+    
+    <item android:id="@+id/action_font_plus"
+          android:icon="@drawable/icon_font_plus"
+          android:title="@string/action_font_plus"
+          yourapp:showAsAction="ifRoom"  />
+    
+    <item android:id="@+id/action_share"
+          android:icon="@drawable/ic_action_share"
+          android:title="@string/action_font_plus"
+          yourapp:showAsAction="never"  />
+    
+    <item android:id="@+id/action_beam"
+          android:icon="@drawable/ic_action_reverse_colors"
+          android:title="@string/action_font_plus"
+          yourapp:showAsAction="never"  />
+    
+    <item android:id="@+id/action_reverse_colors"
+          android:icon="@drawable/ic_action_reverse_colors"
+          android:title="@string/action_font_plus"
+          yourapp:showAsAction="never"  />
+    
+</menu>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="@dimen/padding" >
+    
+    <LinearLayout
+        android:id="@+id/fragment_article_detail_content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:descendantFocusability="blocksDescendants" >
+
+        <jellifish.pirates.views.AutoResizeTextView
+            android:id="@+id/fragment_article_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="@string/default_text"
+            android:textSize="@dimen/fragment_article_detailed_title_def_font_size" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="2">
+			
+            <jellifish.pirates.views.AutoResizeTextView
+	            android:id="@+id/fragment_article_detail_author"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:textStyle="bold"
+	            android:layout_height="wrap_content"
+	            android:text="@string/default_text"
+	            android:textSize="@dimen/fragment_article_detailed_def_font_size" />
+            
+            <jellifish.pirates.views.AutoResizeTextView
+	            android:id="@+id/fragment_article_detail_date"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:layout_height="wrap_content"
+	            android:text="@string/default_text"
+	            android:textSize="@dimen/fragment_article_detailed_def_font_size" />
+			
+		</LinearLayout>
+        
+        
+        <jellifish.pirates.views.RoundedCornersImageView
+            android:id="@+id/fragment_article_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/abc_ab_bottom_solid_dark_holo" />
+
+        <WebView
+            android:id="@+id/fragment_article_detail_webview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+   	</LinearLayout>
+    
+
+</ScrollView>

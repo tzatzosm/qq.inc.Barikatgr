@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <jellifish.pirates.views.AutoScaleTextView
+        android:id="@+id/fragment_article_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:maxLines="3"
+        android:text="@string/default_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <jellifish.pirates.views.AutoScaleTextView
+        android:id="@+id/fragment_article_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_article_detail_title"
+        android:text="@string/default_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <jellifish.pirates.views.AutoScaleTextView
+        android:id="@+id/fragment_article_detail_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fragment_article_detail_date"
+        android:maxLines="1"
+        android:text="@string/default_text"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

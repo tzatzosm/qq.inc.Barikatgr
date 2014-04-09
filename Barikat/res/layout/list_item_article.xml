@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/cell_article_height"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/cell_article_bg" >
+
+    <jellifish.pirates.views.RoundedCornersImageView
+        android:id="@+id/cell_article_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/cell_article_image_size_height"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/content_description"
+        android:src="@drawable/default_image_bg" />
+
+    <jellifish.pirates.views.AutoResizeTextView
+        android:id="@+id/cell_article_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cell_article_title_size_height"
+        android:layout_alignBottom="@+id/cell_article_imageView"
+        android:layout_alignLeft="@+id/cell_article_imageView"
+        android:layout_alignRight="@+id/cell_article_imageView"
+        android:background="@drawable/cell_article_title_bg"
+        android:gravity="center"
+        android:maxLines="3"
+        android:text="@string/default_text"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

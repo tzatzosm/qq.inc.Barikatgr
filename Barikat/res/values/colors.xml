@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#e14f4f</color>
+    <color name="dark_gray">#333333</color>
+
+    <!-- Default Reading Skin -->
+    <color name="black_overlay">#BB000000</color>
+	<color name="sky">#44bbcc</color>
+	
+	<color name="text_color">#F6F6F6</color>
+	
+</resources>
